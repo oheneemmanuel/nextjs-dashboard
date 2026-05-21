@@ -1,5 +1,20 @@
 // @ts-ignore: side-effect import of CSS module
+
+
+
 import '@/app/ui/global.css';
+
+import {Metadata} from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+      default: 'Acme Dashboard',
+  },
+  description: 'The official Next.js Course Dashboard, built with App Router.',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
+
 
 import { inter } from '@/app/ui/fonts';
 export default function RootLayout({
